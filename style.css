@@ -1,5 +1,4 @@
-    /* Basics */
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
     body {
         font-family: 'Open sans',sans-serif;
@@ -18,8 +17,7 @@
         font-family: 'Open sans',sans-serif;
         font-size: 1.2rem;
         line-height: 1.4rem;
-        color: #fff;
-        background-color: #000;
+        color: #000;
         margin: 0;
         font-weight: 900;
         padding: 10px 20px;
@@ -28,7 +26,7 @@
     }
 
     h1 a {
-    color: #fff;
+    color: #000;
     font-weight: 900;
     font-size: 1.2rem;
     text-decoration: none;
@@ -101,6 +99,16 @@
 HEADER STYLES
 ******
 */  
+
+#header h1 {
+        color: #fff;
+        background-color: #000;
+}
+
+#header h1 a {
+color: #fff;
+font-size: 20px;
+}
 
     #header #osu-top-hat {
         width: 100%;
@@ -178,6 +186,7 @@ HEADER STYLES
 
     #header .menuparent:hover .menu-dropdown {
         display: block;
+        z-index: 9999;
     }
 /* dropdown styles */
 
@@ -225,19 +234,6 @@ HEADER STYLES
 
 
 /* dropdown fade in  */
-
-@-webkit-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-         }
-         
-         @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-         }
-.fade {
-    -webkit-animation: fadeIn .5s;
-}
 
 /* 
 *********
@@ -305,206 +301,3 @@ END FOOTER
 
 
 
-
-/* 
-**********
-LIB-ANSWERS SPECIFIC STYLES
-**********
-*/
-    body {
-        background: #ffffff;
-        font-size: 14px;
-    }
-    #s-lg-public-skiplink {
-        font-size: 9px;
-    }
-    a {
-        color: #DC4405;
-    }
-    ul li {
-        list-style-image: none;
-    }
-    #s-lib-public-header-title {
-        display: none;
-    }
-    #s-lib-public-header,
-    #s-lib-public-nav,
-    #s-lib-public-main,
-    #s-lg-guide-header,
-    #s-lg-guide-tabs-title-bar,
-    #s-lg-side-nav-content {
-        margin-left: 15px;
-    }
-    #s-lib-bc .breadcrumb {
-        font-size: 12px;
-        font-weight: normal;
-    }
-    #s-lib-bc .breadcrumb > li {
-        text-shadow: none;
-    }
-    #s-lg-hp-nav {
-        background-color: #f5f2ed;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-    }
-    #s-lg-er-nav-bottom,
-    #s-lg-hp-nav-bottom,
-    #s-lg-srch-nav-bottom {
-        background-color: #e1ded9;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-    }
-    #s-lg-hp-nav > ul > li {
-        padding-bottom: 0;
-    }
-    #s-lg-hp-nav li#s-lg-hp-nav-bottom {
-        padding: 10px;
-    }
-    .s-lib-public-side-header {
-        color: #DC4405;
-        font-family: 'Gudea', Arial, Helvetica, Verdana, sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 30px;
-        padding: 0 10px 0 2px;
-        text-transform: uppercase;
-    }
-    button.btn,
-    a.btn.btn-primary,
-    a.btn.btn-info {
-        text-decoration: none;
-        background-color: #DC4405;
-        background-image: none;
-        color: #ffffff;
-        font-size: 16px;
-        padding: 8px 14px;
-        border: none;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-    }
-    button.btn:hover,
-    button.btn:active,
-    button.btn:focus,
-    a.btn.btn-primary:hover,
-    a.btn.btn-primary:focus,
-    a.btn.btn-primary:active,
-    a.btn.btn-info:hover,
-    a.btn.btn-info:focus,
-    a.btn.btn-info:active {
-        text-decoration: underline;
-        transition: none;
-        -webkit-transition: none;
-        background: none;
-        background-color: #000000;
-        color: #ffffff;
-        border: none;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-    }
-    .s-lg-public-search-field button.btn.btn-default {
-        padding: 4px 10px;
-    }
-    .nav > li > a:hover, .nav > li > a:focus {
-        outline: none;
-    }
-    /* Guide pages */
-    #s-lg-tabs-container .nav-tabs > .active > a,
-    #s-lg-tabs-container .nav-pills > .active > a,
-    #s-lg-tabs-container .nav-tabs > li > a:hover,
-    #s-lg-tabs-container .nav-pills > li > a:hover {
-        background-color: #DC4405;
-        color: #ffffff;
-    }
-    #s-lg-tabs-container .nav-tabs > li > a,
-    #s-lg-tabs-container .nav-pills > li > a {
-        background-color: #000000;
-    }
-    .s-lib-box {
-        border-radius: 0;
-    }
-    .s-lib-box > h2.s-lib-box-title {
-        color: #DC4405;
-        text-transform: uppercase;
-        background: none;
-        background-color: #f5f2ed;
-    }
-    .s-lib-footer {
-        background-color: #f5f2ed;
-    }
-    #s-lib-public-main .txt {
-        font-size: 14px;
-        padding-bottom: 5px;
-    }
-    #s-lg-guide-header-search {
-        display: none;
-    }
-    .s-ui-helptip button.btn.btn-help-popover {
-      background-color: #ffffff;
-    }
-    .s-ui-helptip button.btn.btn-help-popover:focus {
-      outline: dotted 2px #ffffff;
-    }
-    .s-ui-helptip i.fa.fa-info-circle:hover {
-      color: #000000;
-    }
-    .s-ui-helptip i.fa.fa-info-circle {
-      color: #DC4405;
-    }
-    #s-lg-az-index .btn-group>.btn-link {
-      padding: 5px 8px;
-      color: #DC4405;
-      background: #ffffff;
-      font-weight: bold;
-    }
-    #s-lg-az-index .btn:hover {
-      color: #000000;
-    }
-    #s-lg-az-index .btn:focus {
-      color: black;
-      outline: dotted 2px #ffffff;
-    }
-    .s-lg-az-result-share .btn-link {
-      color: #DC4405;
-      background: none;
-      font-size: 10px;
-    }
-    .s-lg-az-result-share .btn-link:focus {
-      outline: dotted 2px #ffffff;
-      background: none;
-      color: #000000;
-    }
-    .s-lg-az-result-share .btn-link:hover {
-      color: #000000;
-      background: none;
-    }
-    .s-lg-label-moreinfo button.btn-link {
-      color: #DC4405;
-      background: #ffffff;
-    }
-    .s-lg-label-moreinfo button.btn-link:hover {
-      color: #000000;
-      background: #ffffff;
-    }
-    #block-block-406 {
-      float: right;
-    }
-    #block-block-406 a {
-      text-decoration: none;
-      font-weight: bold;
-    }
-    @media (min-width: 1200px) {
-      .row {
-            margin-left: -10px;
-            margin-right: -10px;
-        }
-    }
-
-    /*
-    **********
-    END LIB ANSWERS
-    **********
-    */
