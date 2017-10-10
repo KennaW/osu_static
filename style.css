@@ -92,6 +92,9 @@
         border-width: 0;
     }
 
+    
+        
+
 /*
 ******
 HEADER STYLES
@@ -162,7 +165,9 @@ font-size: 20px;
         padding-left: 0;
         padding-right: 0;
     }
-
+#header ul li, #header ol li {
+    line-height: 1.4rem;
+}
 
 
 /* Menu position  */
@@ -246,6 +251,8 @@ font-size: 20px;
     color: white;
     display: block;
     width: 100vw;
+    margin: 0;
+    padding: 10px 0;
   }
 
   #header .nice-menu li {
@@ -258,6 +265,7 @@ font-size: 20px;
 
   #header .menuparent .menu-top-level {
     background-color: inherit;
+    padding: 5px;
   }
 
   #header #main-menu .nice-menu > li.menuparent:hover > span, #header #main-menu .nice-menu > li.over > span {
@@ -273,7 +281,12 @@ font-size: 20px;
   #header li.menu-dropdown-item {
     padding: 0;
     padding-left: 25px;
+    line-height: 40px;
   }
+  #header .nice-menu .menuparent {
+    border-top: 1px solid #474747;
+  }
+  
 }
 
 /*
