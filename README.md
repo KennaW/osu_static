@@ -9,3 +9,10 @@ The style sheet is seperated into four sections: Main, Header, Footer, and Lib a
 After you copy the main, then copy the header or footer styles as you need them. 
 
 Only grab the lib answers styles if you're working in lib answers. They'll mess up your bootstrap.
+
+Note: the mobile menu requires javascript
+
+###Where the static theme is currently used
+* LibApps
+* Room Reservation
+
