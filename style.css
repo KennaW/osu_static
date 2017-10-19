@@ -11,7 +11,7 @@
         line-height: 1.6;
         margin: 0;
 	    padding: 0;
-    }   
+    }
 
     h1 {
         font-family: 'Open sans',sans-serif;
@@ -65,7 +65,7 @@
         color: #dc4405;
         border-bottom: none;
     }
-    
+
     hr {
         margin: 22px 0;
         border: 0;
@@ -86,19 +86,20 @@
         background-color: #f0f0f0;
     }
 
-    
-
     caption, thead, tbody, tr, th, td {
         border-style: solid;
         border-color: #e0e0e0;
         border-width: 0;
     }
 
+    
+        
+
 /*
 ******
 HEADER STYLES
 ******
-*/  
+*/
 
 #header h1 {
         color: #fff;
@@ -139,7 +140,7 @@ font-size: 20px;
     #header #main-menu .menu, #main-menu .nice-menu {
         margin-left: 6em;
     }
-    
+
     #header li.menu-dropdown-item:hover {
         background-color: #666;
     }
@@ -164,6 +165,10 @@ font-size: 20px;
         padding-left: 0;
         padding-right: 0;
     }
+#header ul li, #header ol li {
+    line-height: 1.4rem;
+}
+
 
 /* Menu position  */
 /* @media (min-width: 980px) */
@@ -215,7 +220,7 @@ font-size: 20px;
         text-decoration:none;
         color: white;
     }
- 
+
     #header #main-menu .nice-menu {
         font-size: 16px;
         text-transform: uppercase;
@@ -232,13 +237,62 @@ font-size: 20px;
         color: #fff;
     }
 
+/* Mobile Magic */
+@media (max-width: 850px) {
+  #header .menu-container {
+    padding-left: 0;
+    margin: 0;
+  }
 
-/* dropdown fade in  */
+  #header #main-menu .nice-menu {
+    font-family: "Open Sans", sans-serif;
+    text-transform: none;
+    background: #373737;
+    color: white;
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 10px 0;
+  }
 
-/* 
+  #header .nice-menu li {
+    float: none;
+  }
+
+  #header ul.menu-dropdown {
+    position: relative;
+  }
+
+  #header .menuparent .menu-top-level {
+    background-color: inherit;
+    padding: 5px;
+  }
+
+  #header #main-menu .nice-menu > li.menuparent:hover > span, #header #main-menu .nice-menu > li.over > span {
+    background-color: inherit;
+  }
+
+  #header ul.menu-dropdown {
+    background-color: inherit;
+    margin-top: inherit;
+    padding: 0;
+  }
+
+  #header li.menu-dropdown-item {
+    padding: 0;
+    padding-left: 25px;
+    line-height: 40px;o
+  }
+  #header .nice-menu .menuparent {
+    border-top: 1px solid #474747;
+  }
+  
+}
+
+/*
 *********
 END HEADER
-********* 
+*********
 */
 
 
@@ -290,7 +344,17 @@ FOOTER STYLES
     width: 25%;
 }
 
+/* mobile magic */
+@media (max-width: 850px) {
 
+    #footer .row {
+        flex-direction: column;
+    }
+
+    #footer .col {
+        margin-bottom: 15px;
+    }
+}
 /*
 ********
 END FOOTER
@@ -300,7 +364,7 @@ END FOOTER
 
 
 
-/* 
+/*
 **********
 LIB-ANSWERS SPECIFIC STYLES
 **********
