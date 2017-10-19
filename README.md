@@ -1,6 +1,5 @@
 ## How to copy
 
-
 If you need just the header, grab the header.html. If you need the footer, grab the footer.html. 
 
 The images are linked to the main osu page.
