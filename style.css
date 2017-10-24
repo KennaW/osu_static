@@ -1,3 +1,6 @@
+/* note: add <style> tags for lib apps */
+
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
     body {
@@ -307,7 +310,7 @@ FOOTER STYLES
 ********
 */
 #footer {
-    background: url(http://oregonstate.edu/themes/osu/drupal8-osuhomepage/assets/images/repeatable-treeline.png) #373737 repeat-x left bottom;
+    background: url(https://oregonstate.edu/themes/osu/drupal8-osuhomepage/assets/images/repeatable-treeline.png) #373737 repeat-x left bottom;
     border-top: 4px solid #dc4405;
     min-height: 270px;
     color: #fff;
@@ -373,6 +376,10 @@ LIB-ANSWERS SPECIFIC STYLES
 html body {
     background: #ffffff;
 }
+
+#header h1 {
+    line-height: normal;
+}
 #s-lg-public-skiplink {
     font-size: 9px;
 }
@@ -394,7 +401,7 @@ ul li {
     margin-left: 15px;
 }
 #s-lib-bc .breadcrumb {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: normal;
 }
 #s-lib-bc .breadcrumb > li {
@@ -489,6 +496,7 @@ a.btn.btn-info:active {
     text-transform: uppercase;
     background: none;
     background-color: #f5f2ed;
+    font-size: 20px;
 }
 .s-lib-footer {
     background-color: #f5f2ed;
