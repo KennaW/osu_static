@@ -234,6 +234,11 @@ font-size: 20px;
         display: inline-block;
         padding: 10px 16px;
     }
+    #header #main-menu .nice-menu .menu-dropdown {
+        text-transform: none;
+    }
+
+
     #header #main-menu .nice-menu > li.menuparent:hover > span,
     #header #main-menu .nice-menu > li.over > span {
         background: rgba(0, 0, 0, 0.85);
@@ -284,7 +289,7 @@ font-size: 20px;
   #header li.menu-dropdown-item {
     padding: 0;
     padding-left: 25px;
-    line-height: 40px;o
+    line-height: 40px;
   }
   #header .nice-menu .menuparent {
     border-top: 1px solid #474747;
