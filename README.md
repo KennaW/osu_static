@@ -13,5 +13,6 @@ Note: the mobile menu requires javascript
 
 ###Where the static theme is currently used
 * LibApps
-* Room Reservation
+    *LibGuides
+    *LibAnswers
 
