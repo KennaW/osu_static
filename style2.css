@@ -67,6 +67,7 @@ color:  #D73F09;
 
 
 /* logo block styles */
+header {
 #block-osulp-sitebranding > div {
     height: 100%;
 }
@@ -77,6 +78,8 @@ color:  #D73F09;
 
 .site-name__site-link {
     font-weight: 200;
+    /* bootstrap 3 or 5 */
+    font-size: 3.5rem;
 }
 
 /* menu styles */
@@ -88,7 +91,10 @@ ul.menu-1 li, ul.menu-2 li, ul.nav-tabs li {
 li.menu-1 {
     font-weight: 200;
     color: #222;
-    font-size: .9em;
+    /* bootstrap 3*/
+    font-size: 1.5rem;
+    /* bootstrap 5 */
+    /* font-size: 1em; */
 }
 li.menu-1 a {
     color: #222;
@@ -191,13 +197,14 @@ li.menu-2 {
     background-color: white;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.2), -16px 2px 8px rgba(0,0,0,0.2);
     padding-left: 0rem !important;
-    transition: ;
-
+    z-index: 5;
   }
   
   .dropdown:hover .menu-dropdown-content{
       display: block;
   }
+
+}
 
 
 /* search bar styles */
@@ -217,6 +224,9 @@ li.menu-2 {
 
 #footer h2 {
     font-family: var(--font-stratum);
+    /* boostrap3 */
+        font-size: 1.5rem;
+        /* boostrap 5 */
         font-size: 1rem;
         text-transform: uppercase;
         color: #A7ACA2;
@@ -230,7 +240,10 @@ li.menu-2 {
     text-decoration: underline;
     text-underline-offset: 2px;
     color: #fff !important;
-    font-size: 1rem;
+    /* bootstrap 3 */
+    font-size: 1.5rem;
+    /* bootstrap 5 */
+    /* font-size: 1rem; */
 }
 
 #footer li {
@@ -249,7 +262,10 @@ li.menu-2 {
 }
 
 #footer .title {
-    font-size: 1.25rem;
+    /* bootstrap 3 */
+    font-size: 2rem;
+    /* bootstrap5 */
+    /* font-size: 1.25 */
     font-family: var(--font-stratum);
     font-weight: 700;
 }
