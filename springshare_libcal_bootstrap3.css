@@ -1,5 +1,18 @@
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/favicon.ico" rel="shortcut icon" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css”>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
 /* font stacks */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
 /* @import url('path to stratum2web font') */
 
 /* default colors */
@@ -20,7 +33,7 @@
     --grey-500: #797877;
     --grey-400: #979695;
     --paddletailblack: #212529;
-    --shared: #423E3C;
+    --shared: #221F1E;
     --valley: #7A6855;
     --guin: #006A8E;
     --cascades: #0D5257;
@@ -30,6 +43,100 @@
     --font-stratum: "Stratum2Web", serif;
     --font-sans: "Open Sans", sans-serif;
 }
+ 
+ body {
+        font-family: 'Open sans',sans-serif;
+        background-image: none;
+        background-color: #FDFCFC;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+	    padding: 0;
+    }
+
+    h1 {
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        color: #423e3c;
+        margin: 0;
+        font-weight: 900;
+        padding: 10px 20px;
+        width: 100%;
+        display: block;
+    }
+
+    h1 a {
+    color: #423e3c;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-decoration: none;
+    }
+
+    a:hover, a:focus {
+        text-decoration: underline;
+    }
+
+    h2 {
+        font-family: sans-serif;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: #dc4405;
+    }
+
+    h3 {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        color: #dc4405;
+    }
+    h4{
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #423e3c;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.1rem;
+        color: #dc4405;
+        border-bottom: none;
+    }
+
+    hr {
+        margin: 22px 0;
+        border: 0;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    table th {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        line-height: 2em;
+        background-color: #444;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    table tr:nth-child(2n+1) {
+        background-color: #f0f0f0;
+    }
+
+    caption, thead, tbody, tr, th, td {
+        border-style: solid;
+        border-color: #e0e0e0;
+        border-width: 0;
+    }
+
+/* Colors */
 
 .color-paddletailblack {
     color: #212529;
@@ -192,7 +299,7 @@ li.menu-2 {
 .dropdown .menu-dropdown-content {
     display: none;
     position: absolute;
-    top: 57px;
+    top: 47px;
     min-width: 200px;
     background-color: white;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.2), -16px 2px 8px rgba(0,0,0,0.2);
@@ -227,7 +334,7 @@ li.menu-2 {
     /* boostrap3 */
         font-size: 1.5rem;
         /* boostrap 5 */
-        font-size: 1rem;
+        /* font-size: 1rem; */
         text-transform: uppercase;
         color: #A7ACA2;
         font-weight: normal;
@@ -268,4 +375,78 @@ li.menu-2 {
     /* font-size: 1.25 */
     font-family: var(--font-stratum);
     font-weight: 700;
+}
+
+/* Additional bootstrap 3/5 fight specific override styles */
+.s-lib-footer, .s-la-footer {
+    font-size: 14px;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+/* override for lib answers */
+/* this is for search. this can be safely deleted and modified as needed */
+#s-la-page-title-bar .navbar {
+ display: block;
+}
+/* this is for search. this can be safely deleted and modified as needed */
+#s-la-page-title-bar ul.navbar-nav {
+    flex-direction: row;
+align-items:center;
+}
+/* this is for search. this can be safely deleted and modified as needed */
+#s-la-page-title-bar .s-la-searchform-button{
+color: #fff;
+background-color: #494949;
+font-size: 16px;
+}
+/* this is for search. this can be safely deleted and modified as needed */
+#s-la-page-title-bar .form-control {
+height:40px;
+}
+/* this is for search. this can be safely deleted and modified as needed */
+#s-la-page-title-bar .navbar-form {
+padding-top: 8px;
+}
+/* this is for search. this can be safely deleted and modified as needed */
+#s-la-page-title-bar .s-la-searchform-buttoncol{
+padding-top:3px;
+}
+
+/* end lib answers bootstrap override */
+
+/*
+********
+LIBCAL SPECIFIC STYLES
+********
+*/
+.s-lc-skiplink {
+top: -50px;
+}
+
+/*
+*********
+ROTUNDA RESERVATION
+*********
+*/
+.fc-toolbar h2 {
+font-size: 3rem;
+line-height: 1;
+}
+
+.fc-timeline td {
+white-space: normal;
+}
+
+/*Text for confirmation form*/
+#s-lc-bform-help {
+display:none;
+}
+
+@media (max-width: 425px) {
+#equip_ .fc button {
+    font-size: 1.16rem !important;
+    }
 }

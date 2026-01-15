@@ -1,0 +1,57 @@
+.osulp-lmw {}
+
+
+/* line decoration */
+li.lwe{
+    border-top: 1px #c4c4c4 solid;
+    padding-bottom: 1.5rem;
+}
+
+/* date */
+.localist-widget .lwn .lwn0 {
+    /* font-family: $font-stratum; */
+    font-size: 1rem;
+    line-height: 125%;
+    /* color: color-grey-400; */
+    font-weight: bold;
+    color: #272726;
+}
+/* line break */
+.localist-widget .lwn .lwn0::after{
+    content: "\a";
+    white-space: pre;
+}
+
+/* name link */
+.localist-widget .lwn a {
+    /* font-family: $font-stratum;
+    color: $color-grey-900; */
+    ont-weight: bold;
+    font-size: 1.625rem;
+    font-family: "Stratum2Web", serif;
+}
+
+/* location link */
+.localist-widget .lwl a{
+    text-transform: uppercase;
+    color: #6d6d6d;
+    text-decoration: none;
+}
+.localist-widget .lwl a:hover{
+    text-decoration: underline;
+}
+
+/* word "location" */
+.lwl0 {
+    display:none;
+}
+
+ul {
+    list-style:none;
+    padding: 0;
+}
+
+/* //temporary hide of description */
+.localist-widget .lwe .lwd {
+    display:none;
+}

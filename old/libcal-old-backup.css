@@ -1,0 +1,571 @@
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+<link href="https://libapps.s3.amazonaws.com/accounts/230271/images/favicon.ico" rel="shortcut icon" />
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    body {
+        font-family: 'Open sans',sans-serif;
+        background-image: none;
+        background-color: #fff;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+	    padding: 0;
+    }
+
+    h1 {
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        color: #000;
+        margin: 0;
+        font-weight: 900;
+        padding: 10px 20px;
+        width: 100%;
+        display: block;
+    }
+
+    h1 a {
+    color: #000;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-decoration: none;
+    }
+
+    a:hover, a:focus {
+        text-decoration: underline;
+    }
+
+    h2 {
+        font-family: sans-serif;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: #dc4405;
+    }
+
+    h3 {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        color: #dc4405;
+    }
+    h4{
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.1rem;
+        color: #dc4405;
+        border-bottom: none;
+    }
+
+    hr {
+        margin: 22px 0;
+        border: 0;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    table th {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        line-height: 2em;
+        background-color: #444;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    table tr:nth-child(2n+1) {
+        background-color: #f0f0f0;
+    }
+
+    caption, thead, tbody, tr, th, td {
+        border-style: solid;
+        border-color: #e0e0e0;
+        border-width: 0;
+    }
+
+    
+        
+
+/*
+******
+HEADER STYLES
+******
+*/
+
+#header h1 {
+        color: #fff;
+        background-color: #000;
+}
+
+#header h1 a {
+color: #fff;
+font-size: 20px;
+}
+
+    #header #osu-top-hat {
+        width: 100%;
+    }
+
+    #header #osu-top-hat.new img {
+        height: 80px;
+        margin: 10px;
+    }
+    #header .group-header {
+        background: #000;
+        color: #fff;
+        padding: 10px;
+    }
+
+    #header .group-header h1 {
+        display: inline;
+        padding: 0;
+    }
+
+    #header .group-header a {
+        text-decoration: none;
+    }
+
+    #header #page-wrapper.container-fluid {
+        padding-left: 0;
+    }
+    #header #main-menu .menu, #main-menu .nice-menu {
+        margin-left: 6em;
+    }
+
+    #header li.menu-dropdown-item:hover {
+        background-color: #666;
+    }
+
+    #header .nice-menu > li {
+        float: left;
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        border: none;
+    }
+
+    #header a#search-link {
+        display: none;
+    }
+
+    #header #osu-top-hat.new {
+        background: #d73f09;
+        height: 100px;
+        border-bottom: none;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
+#header ul li, #header ol li {
+    line-height: 1.4rem;
+}
+
+
+/* Menu position  */
+/* @media (min-width: 980px) */
+#header .menu-container {
+    padding-left: 85px;
+    padding-right: 85px;
+    margin: 10px 0;
+}
+
+/* menu top level item position */
+#header .menuparent .menu-top-level {
+    padding: 10px 16px;
+}
+
+/* dropdown menu magic  */
+
+    #header .menu-dropdown {
+        display: none;
+    }
+
+    #header .menuparent:hover .menu-dropdown {
+        display: block;
+        z-index: 9999;
+    }
+/* dropdown styles */
+
+    #header ul li .menuparent{
+        list-style-type: none;
+    }
+
+    #header li.menu-parent {
+        position: relative;
+    }
+
+    #header ul.menu-dropdown {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+        margin-top: 13px;
+        padding: 10px 0;
+    }
+
+    #header li.menu-dropdown-item {
+        padding: 15px;
+        list-style-type: none;
+    }
+
+    #header li.menu-dropdown-item a {
+        text-decoration:none;
+        color: white;
+    }
+
+    #header #main-menu .nice-menu {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #252525;
+        border: none;
+        line-height: 16px;
+        margin: 0 2px;
+        display: inline-block;
+        padding: 10px 16px;
+    }
+    #header #main-menu .nice-menu .menu-dropdown {
+        text-transform: none;
+    }
+
+
+    #header #main-menu .nice-menu > li.menuparent:hover > span,
+    #header #main-menu .nice-menu > li.over > span {
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+    }
+
+/* Mobile Magic */
+@media (max-width: 850px) {
+  #header .menu-container {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  #header #main-menu .nice-menu {
+    font-family: "Open Sans", sans-serif;
+    text-transform: none;
+    background: #373737;
+    color: white;
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  #header .nice-menu li {
+    float: none;
+  }
+
+  #header ul.menu-dropdown {
+    position: relative;
+  }
+
+  #header .menuparent .menu-top-level {
+    background-color: inherit;
+    padding: 5px;
+  }
+
+  #header #main-menu .nice-menu > li.menuparent:hover > span, #header #main-menu .nice-menu > li.over > span {
+    background-color: inherit;
+  }
+
+  #header ul.menu-dropdown {
+    background-color: inherit;
+    margin-top: inherit;
+    padding: 0;
+  }
+
+  #header li.menu-dropdown-item {
+    padding: 0;
+    padding-left: 25px;
+    line-height: 40px;
+  }
+  #header .nice-menu .menuparent {
+    border-top: 1px solid #474747;
+  }
+  
+}
+
+/*
+*********
+END HEADER
+*********
+*/
+
+
+
+
+
+
+
+/*
+********
+FOOTER STYLES
+********
+*/
+#footer {
+    background: url(https://oregonstate.edu/themes/osu/drupal8-osuhomepage/assets/images/repeatable-treeline.png) #373737 repeat-x left bottom;
+    border-top: 4px solid #dc4405;
+    min-height: 270px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 20px;
+}
+
+#footer h2, #footer h3 {
+    color: #fff;
+    font-size: 120%;
+    margin-top: 0;
+    line-height: inherit;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer .row {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer ul li {
+    list-style: none;
+}
+
+#footer hr {
+    border-top: 2px solid #DC4405;
+    border-bottom: none;
+    margin: 10px 0;
+    width: 25%;
+}
+
+/* mobile magic */
+@media (max-width: 850px) {
+
+    #footer .row {
+        flex-direction: column;
+    }
+
+    #footer .col {
+        margin-bottom: 15px;
+    }
+}
+/*
+********
+END FOOTER
+********
+*/
+
+/*
+********
+LIBCAL SPECIFIC STYLES
+********
+*/
+.s-lc-skiplink {
+top: -50px;
+}
+
+/*
+*********
+ROTUNDA RESERVATION
+*********
+*/
+.fc-toolbar h2 {
+font-size: 3rem;
+line-height: 1;
+}
+
+.fc-timeline td {
+white-space: normal;
+}
+
+/*Text for confirmation form*/
+#s-lc-bform-help {
+display:none;
+}
+
+@media (max-width: 425px) {
+#equip_ .fc button {
+    font-size: 1.16rem !important;
+    }
+}
+</style>
+
+
+/* Header backup */
+<div id="header">
+    <div id="osu-top-hat" class="new container-fluid">
+        <a href="https://oregonstate.edu"><img src="https://oregonstate.edu/themes/osu/homepage/logo.svg" alt="Oregon State University "></a> 
+    </div>
+    <h1><a href="http://library.oregonstate.edu">Libraries</a></h1>
+    <div id="mobile-icon-menu">
+        <a href='#' id="toggle-mobile-menu" class="m-icon-link"><i class="icon-reorder"></i></a>
+    </div>
+
+    <div id='page-wrapper' class='container-fluid'>
+
+
+        <div id='main-menu' role="navigation">
+            <div class="region region-nav">
+                <div id="block-nice-menus-1" class="block block-nice-menus">
+                    <div class="menu-container" id="desktop-menu">
+                        <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1">
+                            <li class="menuparent">
+                                <span title="" class="menu-top-level">Borrow &amp; Request</span>
+                                <ul class="menu-dropdown">
+                                    <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/ill" title="">Interlibrary Loan and Scan & Deliver</a></li>
+                                    <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/reserves" title="">Course Reserves</a></li>
+                                    <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/summit-landing" title="">Summit</a></li>
+                                    <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/purchase-request" title="">Purchase Request</a></li>
+                                    <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/borrowing-policies" title="">Borrowing</a></li>
+                                    <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/my-account" title="">My Account</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menuparent">
+                                <span title="" class="menu-top-level">Help</span>
+                                <ul class="menu-dropdown">
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/reference" title="">Ask a Librarian</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/instructor-support" title="">Instructor Support</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://oregonstate.instructure.com/courses/1772293" title="">Library How-To</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://guides.library.oregonstate.edu/" title="">Research Guides</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/researcher-support" title="">Research Support</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://oregonstate.libcal.com/calendar/workshops" title="">Workshops</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menuparent"><span title="" class="menu-top-level">Meet &amp; Study Here</span>
+                                <ul class="menu-dropdown">
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/study-rooms" title="">Study Rooms</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/room-schedule" title="">Classrooms</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/research-rooms" title="">Research Rooms</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/partner-spaces" title="">Partner Spaces</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/floormaps" title="">Floor Maps</a></li>
+                            </ul>
+                            </li>
+
+                            <li class="menuparent">
+                                <span title="" class="menu-top-level">Tech &amp; Print</span>
+                                <ul class="menu-dropdown">
+                                    <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/loanable-equipment" title="">Loanable Equipment</a></li>                            
+                                        <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/copy-print-scan" title="">Print, Scan, Copy</a></li>                              
+                                        <li class="menu-dropdown-item"><a href="https://guides.library.oregonstate.edu/3Dprinting" title="">3D Printers</a></li>                               
+                                        <li class="menu-dropdown-item"><a href="https://is.oregonstate.edu/sms" title="">Poster Printing</a></li>
+                                        <li class="menu-dropdown-item"><a href="http://library.oregonstate.edu/computers" title="">Computers</a></li>
+                            
+                                 </ul>
+                            </li>
+
+                            <li class="menuparent">
+                                <span title="" class="menu-top-level">About</span>
+                                <ul class="menu-dropdown">
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/about/valley" title="">About</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/staff/directory" title="">Directory</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/history-osu-libraries-and-press" title="">History</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/osulp-leadership" title="">OSULP Leadership</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/policies" title="">Policies</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/visit" title="">Visiting</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/jobs" title="">Jobs</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://library.oregonstate.edu/strategic-plan" title="">Strategic Plan</a></li>
+                                    <li class="menu-dropdown-item"><a href="https://securelb.imodules.com/s/359/foundation/index.aspx?sid=359&gid=34&pgid=1982&cid=3007&bledit=1&dids=571" title="">Giving</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+/* footer backup */
+<div id='footer'>
+    <div class='row'>
+        <div class='col'>
+            <h2>Contact Info</h2>
+            <div class="specific-contact">
+                <p>121 The Valley Library<br/>Corvallis OR 97331–4501</p>
+                <p>Phone: 541-737-3331</p>
+                <p><a href="http://answers.library.oregonstate.edu/ask">Contact
+                    Us</a></p>
+                <p><a href="https://library.oregonstate.edu/accessibility-services">Services for Persons
+                    with Disabilities</a></p></div>
+            <div class="general-contact">
+                <a href="http://oregonstate.edu/copyright">Copyright</a>
+                ©2018 Oregon State University<br/>
+                <a href="http://oregonstate.edu/disclaimer">Disclaimer</a>
+            </div>
+            <div class="social-media"><a
+                    href="https://www.facebook.com/pages/Corvallis-OR/The-Valley-Library/5913513878?ref=ts"
+                    title="Go to our Facebook page"><i
+                    class="fa fa-facebook"></i> Facebook</a><a
+                    href="https://www.flickr.com/photos/osuvalleylibrary"
+                    title="Go to our Flickr page"><i
+                    class="fa fa-flickr"></i> Flickr</a><a
+                    href="https://www.twitter.com/osuvalleylib"
+                    title="Go to our Twitter page"><i
+                    class="fa fa-twitter"></i> Twitter</a></div>
+        </div>
+        
+        <div class="col">
+            <div id="osul-footer-left">
+                <div class="content">
+                    <h2>In the Valley Library</h2>
+                    <ul class="menu">
+                        <li class="first leaf"><a href="//www.osupress.oregonstate.edu/">Oregon State University Press</a></li>
+                        <li class="leaf"><a href="//cdss.library.oregonstate.edu">Center for Digital Scholarship and Services</a></li>
+                        <li class="leaf"><a href="//scarc.library.oregonstate.edu">Special Collections and Archives Research Center</a></li>
+                        <li class="leaf"><span class="separator"><hr/></span></li>
+                        <li class="leaf"><a href="https://library.oregonstate.edu/clc">Collaborative Learning Center</a></li>
+                        <li class="leaf"><a href="//oregonstate.edu/is/mediaservices/sms/">Student Multimedia Services</a></li>
+                        <li class="leaf"><a href="https//library.oregonstate.edu/nwart">Northwest Art Exhibit</a></li>
+                        <li class="leaf"><a href="http://familyresources.oregonstate.edu/olv-library">Child Care</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="content">
+                <h2>Digital Projects</h2>
+                <ul class="menu">
+                    <li class="first leaf"><a href="//oregonexplorer.info">Oregon Explorer</a></li>
+                    <li class="leaf"><a href="//oregondigital.org">Oregon Digital</a></li>
+                    <li class="leaf"><a href="//ir.library.oregonstate.edu">ScholarsArchive@OSU</a></li>
+                    <li class="leaf"><a href="//dpi.library.oregonstate.edu">Digital Publishing Initiatives</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Branches</h2>
+                <ul class="menu">
+                    <li class="leaf"><a href="http://guin.library.oregonstate.edu">Marilyn Potts Guin Library</a></li>
+                    <li class="last leaf"><a href="http://cascades.library.oregonstate.edu/">Cascades Campus Library</a></li>
+                </ul>
+            </div>
+        </div>
+                
+        <div class="col">
+            <p>
+                <img src="https://library.oregonstate.edu/sites/default/files/fdlp-emblem-color.png" alt="FDLP Emblem" width="45" height="40"/>
+                <a href="https://guides.library.oregonstate.edu/subject-guide/286-Government-Information">Federal Depository Library Program</a>
+            </p>
+        </div>           
+    </div>
+</div>

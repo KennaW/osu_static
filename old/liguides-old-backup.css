@@ -1,0 +1,789 @@
+<style>@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    body {
+        font-family: 'Open sans',sans-serif;
+        background-image: none;
+        background-color: #fff;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        font-size: 1.5em;
+        line-height: 1.6;
+        margin: 0;
+	    padding: 0;
+        color: #000;
+    }
+
+    a {
+
+        color: #2e5090;
+    }
+
+    h1 {
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.2rem;
+        /* line-height: 1.4rem; */
+        color: #000;
+        margin: 0;
+        font-weight: 900;
+        padding: 10px 20px;
+        width: 100%;
+        display: block;
+    }
+
+    h1 a {
+    color: #000;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-decoration: none;
+    }
+
+    a:hover, a:focus {
+        text-decoration: underline;
+    }
+
+    h2 {
+        font-family: sans-serif;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    h3 {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        color: #000;
+    }
+    h4{
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-family: 'Open sans',sans-serif;
+        font-size: 1.1rem;
+        color: #000;
+        border-bottom: none;
+    }
+
+    hr {
+        margin: 22px 0;
+        border: 0;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    table th {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        line-height: 2em;
+        background-color: #444;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    table tr:nth-child(2n+1) {
+        background-color: #f0f0f0;
+    }
+
+    caption, thead, tbody, tr, th, td {
+        border-style: solid;
+        border-color: #e0e0e0;
+        border-width: 0;
+    }
+
+    
+        
+
+/*
+******
+HEADER STYLES
+******
+*/
+
+#header h1 {
+        color: #fff;
+        background-color: #000;
+}
+
+#header h1 a {
+color: #fff;
+font-size: 20px;
+}
+
+    #header #osu-top-hat {
+        width: 100%;
+    }
+
+    #header #osu-top-hat.new img {
+        height: 80px;
+        margin: 10px;
+    }
+    #header .group-header {
+        background: #000;
+        color: #fff;
+        padding: 10px;
+    }
+
+    #header .group-header h1 {
+        display: inline;
+        padding: 0;
+    }
+
+    #header .group-header a {
+        text-decoration: none;
+    }
+
+    #header #page-wrapper.container-fluid {
+        padding-left: 0;
+    }
+    #header #main-menu .menu, #main-menu .nice-menu {
+        margin-left: 6em;
+    }
+
+    #header li.menu-dropdown-item:hover {
+        background-color: #666;
+    }
+
+    #header .nice-menu > li {
+        float: left;
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        border: none;
+    }
+
+    #header a#search-link {
+        display: none;
+    }
+
+    #header #osu-top-hat.new {
+        background: #D73F09;
+        height: 100px;
+        border-bottom: none;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
+#header ul li, #header ol li {
+    line-height: 1.4rem;
+}
+
+
+/* Menu position  */
+/* @media (min-width: 980px) */
+#header .menu-container {
+    padding-left: 85px;
+    padding-right: 85px;
+    margin: 10px 0;
+}
+
+/* menu top level item position */
+#header .menuparent .menu-top-level {
+    padding: 10px 16px;
+}
+
+/* dropdown menu magic  */
+
+    #header .menu-dropdown {
+        display: none;
+    }
+
+    #header .menuparent:hover .menu-dropdown {
+        display: block;
+        z-index: 9999;
+    }
+/* dropdown styles */
+
+    #header ul li .menuparent{
+        list-style-type: none;
+    }
+
+    #header li.menu-parent {
+        position: relative;
+    }
+
+    #header ul.menu-dropdown {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+        margin-top: 13px;
+        padding: 10px 0;
+    }
+
+    #header li.menu-dropdown-item {
+        padding: 15px;
+        list-style-type: none;
+    }
+
+    #header li.menu-dropdown-item a {
+        text-decoration:none;
+        color: white;
+    }
+
+    #header #main-menu .nice-menu {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #252525;
+        border: none;
+        line-height: 16px;
+        margin: 0 2px;
+        display: inline-block;
+        padding: 10px 16px;
+    }
+
+    #header #main-menu .nice-menu .menu-dropdown {
+        text-transform: none;
+    }
+
+    #header #main-menu .nice-menu > li.menuparent:hover > span,
+    #header #main-menu .nice-menu > li.over > span {
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+    }
+
+/* Mobile Magic */
+@media (max-width: 850px) {
+    #header .menu-container {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    #header #page-wrapper.container-fluid {
+        background-color: #373737;
+    }
+
+    #header #main-menu .nice-menu {
+        font-family: "Open Sans", sans-serif;
+        text-transform: none;
+        color: white;
+        display: block;
+        /* 100vw adds the width of the scroll bar. not great for mobile */
+        /* width: 100vw; */
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    #header .nice-menu li {
+        float: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #header ul.menu-dropdown {
+        position: relative;
+    }
+
+    #header .menuparent .menu-top-level {
+        background-color: inherit;
+        padding: 5px;
+    }
+
+    #header #main-menu .nice-menu > li.menuparent:hover > span, #header #main-menu .nice-menu > li.over > span {
+        background-color: inherit;
+    }
+
+    #header ul.menu-dropdown {
+        background-color: inherit;
+        margin-top: inherit;
+        padding: 0;
+    }
+
+    #header li.menu-dropdown-item {
+        padding: 0;
+        padding-left: 25px;
+        line-height: 40px;
+    }
+    #header .nice-menu .menuparent {
+        border-top: 1px solid #474747;
+    }
+
+    /* hides the breadcrumb when in mobile */
+    .breadcrumb {
+        display: none;
+    }
+
+    
+  
+}
+
+/* Alert box styles */
+    .alert {
+    background-color:#E5F2F4;
+    border-left: 10px solid;
+    border-color: #00859B;
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+    .alert p{
+        font-weight: bolder;
+    }
+    .alert h3{
+        font-size: larger;
+        margin-top: 10px;
+    }
+    .alert a{
+        color: #1200e8;
+    }
+
+/*
+*********
+END HEADER
+*********
+*/
+
+
+
+
+
+
+
+/*
+********
+FOOTER STYLES
+********
+*/
+#footer {
+    background: url(https://oregonstate.edu/themes/osu/drupal8-osuhomepage/assets/images/repeatable-treeline.png) #373737 repeat-x left bottom;
+    border-top: 4px solid #dc4405;
+    min-height: 270px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 20px;
+}
+
+#footer h2, #footer h3 {
+    color: #fff;
+    font-size: 120%;
+    margin-top: 0;
+    line-height: inherit;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer .row {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer ul li {
+    list-style: none;
+}
+
+#footer hr {
+    border-top: 2px solid #DC4405;
+    border-bottom: none;
+    margin: 10px 0;
+    width: 25%;
+}
+
+/* mobile magic */
+@media (max-width: 850px) {
+
+    #footer .row {
+        flex-direction: column;
+    }
+
+    #footer .col {
+        margin-bottom: 15px;
+    }
+}
+/*
+********
+END FOOTER
+********
+*/
+
+
+
+
+/*
+**********
+LIB-GUIDES SPECIFIC STYLES
+**********
+*/
+
+html body {
+    background: #ffffff;
+    color: #000;
+    font-size: 1.5em;
+}
+
+#header h1 {
+    line-height: normal;
+}
+#s-lg-public-skiplink {
+    font-size: 9px;
+}
+a {
+    color:#2e5090;
+}
+ul li {
+    list-style-image: none;
+}
+#s-lib-public-header-title {
+    display: none;
+}
+
+.label-primary {
+  background-color: #006A8E;
+}
+
+
+/*Managing the page title*/
+h2.s-lib-box-title {
+    font-weight: 200;
+    }
+
+#s-lg-guide-header-info h1,
+    .s-lib-header h1 {
+     font-size:2em;
+    }
+    
+/*Side nav*/
+.s-lib-footer {
+    background-color: #ebf3ff;
+}
+
+.label-info {
+  background-color: #006a8e;
+}
+
+.label {
+  /* padding: .2em .6em .3em; */
+  padding: .5em .7em;
+}
+
+/* caused alignment problems on the a-z, #s-lib-public-main, #s-lg-guide-header, and #s-lg-side-nav-content and those might need to be re added. EDIT -- Might be responsible for all the alignment issues? */
+#s-lib-public-header,
+#s-lib-public-nav,
+#s-lg-guide-tabs-title-bar {
+    margin-left: 15px;
+}
+
+#s-lib-bc .breadcrumb {
+    font-size: 18px;
+    font-weight: normal;
+}
+#s-lib-bc .breadcrumb > li {
+    text-shadow: none;
+}
+#s-lg-hp-nav {
+    /* background-color: #f5f2ed; */
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+/*removed #s-lg-srch-nav-bottom for A-Z page. may need to remove the rest*/
+#s-lg-er-nav-bottom,
+#s-lg-hp-nav-bottom,
+ {
+    background-color: #e1ded9;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+#s-lg-hp-nav > ul > li {
+    padding-bottom: 0;
+}
+#s-lg-hp-nav li#s-lg-hp-nav-bottom {
+    padding: 10px;
+}
+
+
+/*Making sure the side headers on the a-z page are black, not orange*/
+.s-lib-public-side-header h2 {
+    color: #000;
+}
+
+.s-lib-public-side-header {
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 0 10px 0 2px;
+    text-transform: uppercase;
+}
+
+/* Color correction on 'new' button on a-z page */
+.s-lg-az-result-badge-new {
+background-color: #0D5257;
+}
+
+/*these two are just a bit of nudging for the title and the header info*/
+#s-lg-guide-desc-container {
+  margin-left: 20px;
+}
+#s-lg-guide-header-info {
+  margin-bottom: 15px;
+}
+
+button.btn,
+a.btn.btn-primary,
+a.btn.btn-info {
+    text-decoration: none;
+    background-color: #006A8E;
+    background-image: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5.6px 14px;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+button.btn:hover,
+button.btn:active,
+button.btn:focus,
+a.btn.btn-primary:hover,
+a.btn.btn-primary:focus,
+a.btn.btn-primary:active,
+a.btn.btn-info:hover,
+a.btn.btn-info:focus,
+a.btn.btn-info:active {
+    text-decoration: underline;
+    transition: none;
+    -webkit-transition: none;
+    background: none;
+    background-color: #006A8E;
+   color: #ffffff;
+    border: none;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   border-radius: 0;
+}
+.s-lg-public-search-field button.btn.btn-default {
+    padding: 4px 10px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    outline: none;
+}
+
+/*
+**********
+A-Z SPECIFIC STYLES
+**********
+*/
+
+.s-lg-az-result-description {
+ font-size: 14px;
+}
+
+#s-lg-az-results .s-lg-az-result-title {
+ font-size: 16px;
+}
+
+.s-lg-az-result-title {
+ font-size: 16px
+}
+
+.s-lib-public-side-header  h2, #s-lg-box-legend h2, #s-lg-box-help h2 , #s-lg-box-starting h2{
+    color: #000;
+    font: 700 18px Arial,Geneva,Helvetica,sans-serif;
+    line-height: 30px;
+    padding: 0 10px 0 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+#s-lg-box-legend p, #s-lg-box-help p, #s-lg-box-starting {
+ font-size:14px;
+}
+
+#s-lg-az-index .btn-group>.btn-link[disabled] {
+ color: #777;
+}
+
+#az-search-col-1 .navbar.navbar-default {
+   background-color: #cccccc;
+   border: none;
+}
+
+#s-lg-az-filter-cols #col-search form .form-group .input-group .input-group-btn .btn.btn-default {
+    text-decoration: none;
+    background-color: #ffffff;
+    background-image: none;
+    color: #555555;
+    font-size: 16px;
+    padding: 4.6px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 0 4px 4px 0;
+}
+#s-lg-az-results #s-lg-db-name-featured {
+ background-color: #f0f0f0;
+}
+
+/* SUBJECT page */
+/* menu active element blue matching  -- may have impact past this element*/
+.nav-pills > li.active > button, .nav-pills > li.active > button:focus, .nav-pills > li.active > button:hover {
+background-color: #006a8e;
+}
+.nav .s-lg-index-nav-btn > button {
+color: #2d699e;
+}
+.nav .s-lg-index-nav-btn > button:hover {
+color: white;
+}
+
+/* Guide pages */
+
+
+
+#s-lg-tabs-container .nav-tabs > .active > a,
+#s-lg-tabs-container .nav-pills > .active > a,
+#s-lg-tabs-container .nav-tabs > .active > a:hover,
+#s-lg-tabs-container .nav-pills > .active > a:hover,
+#s-lg-tabs-container .nav-tabs > .active > button, 
+#s-lg-tabs-container .nav-pills > .active > button,
+#s-lg-tabs-container .nav-tabs > li > a:hover,
+#s-lg-tabs-container .nav-pills > li > a:hover
+ {
+    background-color: #006a8e;
+    color: #ffffff;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a, 
+#s-lg-tabs-container .nav-tabs > li > button, 
+#s-lg-tabs-container .nav-pills > li > a, 
+#s-lg-tabs-container .nav-pills > li > button {
+    background-color: #c6dae7;
+    color: #000;
+}
+
+.s-lib-box {
+    border: none;
+    box-shadow: none;
+}
+.s-lib-box > h2.s-lib-box-title {
+    color: #000;
+    text-transform: uppercase;
+    background: none;
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    font-size: 1.5em;
+    font-family: Open Sans;
+    font-style: normal;
+}
+
+/*profile name*/
+.s-lib-profile-name {
+  font-size: 1.3em;
+}
+
+.s-lib-box > h2.s-lib-box-title {
+  color: #000;
+  background-color: #fff;
+}
+
+
+.s-lg-tabs-side .s-lg-boxnav .list-group-item {
+  background-color: #fff;
+}
+
+.s-lib-footer {
+    background-color: #f0f0f0;
+}
+#s-lib-public-main .txt {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+/*HIDES THE SEARCH*/
+#s-lg-guide-header-search {
+    display: none;
+}
+.s-ui-helptip button.btn.btn-help-popover {
+  background-color: #ffffff;
+}
+.s-ui-helptip button.btn.btn-help-popover:focus {
+  outline: dotted 2px #ffffff;
+}
+.s-ui-helptip i.fa.fa-info-circle:hover {
+  color: #000000;
+}
+.s-ui-helptip i.fa.fa-info-circle {
+  color: #DC4405;
+}
+#s-lg-az-index .btn-group>.btn-link {
+  padding: 5px 8px;
+  color: #006A8E;
+  background: #ffffff;
+  font-weight: bold;
+}
+#s-lg-az-index .btn:hover {
+  color: #000000;
+}
+#s-lg-az-index .btn:focus {
+  color: black;
+  outline: dotted 2px #ffffff;
+}
+.s-lg-az-result-share .btn-link {
+  color: #23527C;
+  background: none;
+  font-size: 10px;
+}
+.s-lg-az-result-share .btn-link:focus {
+  outline: dotted 2px #ffffff;
+  background: none;
+  color: #000000;
+}
+.s-lg-az-result-share .btn-link:hover {
+  color: #000000;
+  background: none;
+}
+.s-lg-label-moreinfo button.btn-link {
+  color: #DC4405;
+  background: #ffffff;
+}
+.s-lg-label-moreinfo button.btn-link:hover {
+  color: #000000;
+  background: #ffffff;
+}
+#block-block-406 {
+  float: right;
+}
+#block-block-406 a {
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 1200px) {
+  .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+@media (max-width: 850px) {
+/* kills a layout issue for mobile */
+
+    .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    }
+
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    
+/*note for later -- this seems to be a break point for some reason.*/
+    @media (max-width: 976px) {
+
+        /* limit the size of the headshot on zoom */
+
+        .s-lib-profile-div > img {
+                max-width: 300px;
+            }
+    }
+
+}
