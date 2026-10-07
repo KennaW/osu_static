@@ -26,9 +26,10 @@
     --grey-400: #979695;
     --paddletailblack: #212529;
     --shared: #423E3C;
-    --valley: #7A6855;
+    --valley: rgb(71, 43, 89);
     --guin: #006A8E;
     --cascades: #0D5257;
+    --ecampus: #7A6855;
     --neutral: #FDFCFC;
     --white: #FFFFFF;
     --black: #423e3c;
@@ -39,6 +40,10 @@
     --bs-body-line-height: 1.8;
     --bs-body-color: #423e3c;
     --bs-body-bg: #f7f5f5;
+}
+
+.osul-white-link, .osul-white-link:hover {
+    color: var(--white);
 }
 
 .color-paddletailblack {
@@ -77,6 +82,17 @@ color:  var(--beaver-orange);
     font-family: "Open Sans", sans-serif;
 }
 
+/* General styles for osu theme */
+/* links */
+a {
+    text-decoration-color: var(--beaver-dark);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 2px;
+}
+a:hover {
+    text-decoration: none;
+}
+
 
 /* logo block styles */
 header {
@@ -88,15 +104,19 @@ header {
 	height: 80px;
 }
 
+.block-system-branding-block a h1 {
+    font-size: calc(1.275rem + 0.3vw);
+    font-weight: bolder !important;
+}
+
 .site-name__site-link {
-    font-weight: 200;
-    /* bootstrap 3 or 5 */
-    font-size: 3.5rem;
+    font-weight: 300;
+    font-size: calc(16px + 1.5vw) !important;
 }
 
 .site-name__site-link--with-group {
-    font-weight: 200;
-    font-size: 2rem;
+    font-weight: 300;
+    font-size: calc(1.325rem + 0.9vw) !important;
 }
 
 /* menu styles */
@@ -126,6 +146,9 @@ li.menu-1:hover, li.menu-1:hover a {
 
 
 /* menu 2 specific styles */
+ul.menu-2 {
+    flex-wrap: wrap;
+}
 
 li.menu-2 {
     padding: 1.5rem;
@@ -188,21 +211,28 @@ li.menu-2 {
     --bs-nav-tabs-link-hover-border-color: #0D5257;
     --bs-border-color: #0D5257;
     background-color: #0D5257 !important;
-    color: #fff;
+    color: var(--white);
 }
 
-.nav-item.valley > a {
+.nav-item.ecampus > a {
   --bs-nav-tabs-link-hover-border-color: #7A6855;
   --bs-border-color: #7A6855;
   background-color: #7A6855 !important;
-  color: #fff;
+  color: var(--white);
 }
+.nav-item.valley > a {
+  --bs-nav-tabs-link-hover-border-color: rgb(71, 43, 89);
+  --bs-border-color: rgb(71, 43, 89);
+  background-color: rgb(71, 43, 89) !important;
+  color: var(--white);
+}
+
 
 .nav-item.guin > a {
   --bs-nav-tabs-link-hover-border-color: #006A8E;
   --bs-border-color: #006A8E;
   background-color: #006A8E !important;
-  color: #fff;
+  color: var(--white);
 }
 
 /* dropdown magic */

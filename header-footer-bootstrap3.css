@@ -27,14 +27,30 @@
     --grey-400: #979695;
     --paddletailblack: #212529;
     --shared: #423E3C;
-    --valley: #7A6855;
+    --valley: rgb(71, 43, 89);
     --guin: #006A8E;
     --cascades: #0D5257;
+    --ecampus: #7A6855;
     --neutral: #FDFCFC;
     --white: #FFFFFF;
     --black: #423e3c;
     --font-stratum: "Stratum2Web", serif;
     --font-sans: "Open Sans", sans-serif;
+    --bs-body-font-size: 1.125rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.8;
+    --bs-body-color: #423e3c;
+    --bs-body-bg: #f7f5f5;
+}
+
+.osul-white-link, .osul-white-link:visited {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.osul-white-link:hover {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .color-paddletailblack {
